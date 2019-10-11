@@ -1,0 +1,38 @@
+.main{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 60%
+}
+.name{
+    font-size: 3rem;
+    /* color:#f9fcfc; */
+    animation:blinkingText 0.8s infinite;
+}
+    @keyframes blinkingText{
+        0%{     color: #f7efef;    }
+        49%{    color: #ff001647; }
+        50%{    color: transparent; }
+        99%{    color:transparent;  }
+        100%{   color: #f9fd04;    }
+    }
+.center{
+    text-align: -webkit-center;
+}
+.list{
+    font-size: 1.6rem;
+    color: yellow;
+    
+    width: 40%;
+    text-decoration-line: underline
+}
+
+@media screen and (max-width: 501px) {
+    .name{
+        font-size:1.3rem;
+    }
+    .list{
+      font-size: 1rem;
+    }
+  }
